@@ -1,0 +1,163 @@
+@import url(https://fonts.bunny.net/css?family=abel:400|alegreya-sans:400,500,700|anton:400);
+
+@font-face {
+  font-family: "Norse Bold";
+  src:
+    url("font/Norsebold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+input {
+  appearance: none;
+  outline: none;
+}
+
+/*side-bar*/
+.side {
+  width: 650px;
+  max-height: 100vh;
+  background: no-repeat center/160% url("img/background-img.jpg");
+}
+
+.odin-logo {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.356);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+  top: 25vh;
+}
+
+.odin-logo > span {
+  font-family: 'Norse Bold';
+  text-transform: uppercase;
+  font-size: 90px;
+  align-self: center;
+}
+
+/*main content*/
+
+.main {
+  background-color: #f5f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > div {
+  padding: 35px 45px
+}
+
+.text-content {
+  padding: 0 45px;
+  height: 35vh;
+  width: 70%;
+  font-size: 22px;
+  display: flex;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.text-content p {
+  margin-bottom: -70px;
+}
+
+/*forms*/
+
+.form-field {
+  background-color: #ffffff;
+  height: 30vh;
+  box-shadow: 2px 2px 3px #00000033;
+
+}
+
+legend {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.fields {
+  width: 60%;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+}
+
+.fields div {
+  box-sizing: border-box;
+  flex-basis: calc(50% - 5px);
+  padding: 10px;
+}
+
+.fields label {
+  text-transform: uppercase;
+  font-size: small;
+  display: block;
+}
+
+.fields input {
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 18px;  
+  width: 75%;
+  height: 25px;
+  border: solid 1px #e5e7eb;
+}
+
+input:focus {
+  border: 1px solid #0000ff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.706);
+}
+
+input[type="password"]:invalid {
+  border: 1px solid #ff0000;
+}
+
+input[type="password"]:invalid:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.706);
+}
+
+/*bottom*/
+
+.bottom {
+  height: 35vh;
+}
+
+.bottom > p {
+  font-size: 20px;
+}
+
+button {
+  padding: 14px 48px;
+  background-color: #596d48;
+  border-radius: 8px;
+  font-size: medium;
+  color: #ffffff;
+  border-style: none;
+  margin-bottom: 25px;
+  font-weight: 900;
+}
